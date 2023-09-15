@@ -21,4 +21,21 @@ public class BinarySearchTree {
         // do nothing if the value == root.data - no need to insert it
         return root;
     }
+
+    public boolean contains(int value) {
+        return contains(this.root, value);
+    }
+
+    private boolean contains(Node root, int value) {
+        if (root == null) {
+            return false;
+        }
+        if (value < root.data) {
+            return contains(root.left, value);
+        }
+        if (value > root.data) {
+            return contains(root.right, value);
+        }
+        return true;
+    }
 }

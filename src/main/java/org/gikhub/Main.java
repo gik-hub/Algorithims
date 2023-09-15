@@ -30,8 +30,8 @@ public class Main {
         BinaryTree bTree = new BinaryTree();
         bTree.root = btRootNode;
 
-        bTree.inOrderTraversal();
-        System.out.println();
+//        bTree.inOrderTraversal();
+//        System.out.println();
 
 //        BINARY SEARCH TREE
         Node rootNode = new Node();
@@ -44,5 +44,9 @@ public class Main {
         bsTree.insert(1);
         bsTree.insert(3);
         bsTree.insert(4);
+
+        System.out.println(bsTree.contains(1));
+        System.out.println(bsTree.contains(5));
+        System.out.println(bsTree.contains(4));
     }
 }
